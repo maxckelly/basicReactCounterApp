@@ -1,11 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
+
 // This creates a redux
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 // Other files 
 import Counter from './counter.js';
+
 
 // Import CSS
 import "./index.css";
@@ -47,7 +49,7 @@ class App extends React.Component {
             < Counter />
           </div>
           <div className="another-arbitrary-block">
-            < SomeContainer />
+            <SomeContainer />
           </div>
         </div>
       </Provider>

@@ -2,6 +2,9 @@ import React from 'react';
 // This allows us to connect to react-redux
 import { connect } from 'react-redux';
 
+// Other files
+import ResetButton from './resetButton';
+
 // Imports CSS Document
 import './counter.css';
 
@@ -32,10 +35,6 @@ class Counter extends React.Component {
     this.sendToStore(this.props.count - 10);
   };
 
-  reset = () => {
-    this.sendToStore(0);
-  }
-
   // This re renders thr app as well as adds the buttons etc... in 
   render(){
     return (
@@ -55,7 +54,7 @@ class Counter extends React.Component {
           </div>
         </div>
         <div>
-          <button className="reset-button" onClick={this.reset}> Reset </button>
+          <ResetButton />
         </div>
       </div>
     )
