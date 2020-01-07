@@ -12,7 +12,7 @@ import "./index.css";
 import SomeContainer from "./someContainer.js";
 
 // This defines an initial state incase redux is undefined
-const initialState = { count: 0 };
+const initialState = { label: "Something", count: 0 };
 
 class App extends React.Component {
 
@@ -25,7 +25,7 @@ class App extends React.Component {
     // Switch is just like case in Ruby.
     switch( action.type ) {
       case "UPDATE_COUNT":
-        newState = { count: action.newCount };
+        newState = { ...state, count: action.newCount };
         break;
 
       default:

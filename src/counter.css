@@ -50,3 +50,13 @@ body {
     border-color: rgb(35, 141, 35);
     color: #fff;
   }
+
+  .button {
+    padding-right: 30px;
+    margin: 5px;
+  }
+
+  .reset-button {
+    padding-right: 3.5rem;
+    margin-top: 30px;
+  }
